@@ -59,11 +59,23 @@
       margin: auto;
     }
 
+    .zoom{
+        margin-top: 12rem;
+        display: block;
+        text-align: center;
+    }
+
     /* Mobile */
     @media (max-width: 400px) {
+    header p{
+        position: absolute;
+        font-size: 4px;
+    }
+    
       #cards-container{
       padding-left: 3%;
       display: block;
+      margin: auto;
       }
 
       footer{
@@ -72,10 +84,26 @@
       }
 
       footer a{
-        margin-right: 12px;
-        font-size: 8px;
-      }
+        margin-right: 9px;
+        font-size: 7px;
      }
+
+     .card{
+      min-height: 3em;
+     }
+
+     .card-body h5{
+         font-size: 15px;
+     }
+
+     .card-body p{
+         font-size: 12px;
+     }
+
+     .card-body a{
+         font-size: 12px;
+     }
+    }
     </style>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/ceab09485a.js" crossorigin="anonymous"></script>
@@ -87,7 +115,9 @@
         <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <img id="school-logo" src="https://i.ibb.co/qFKpSbr/logo.png" alt="">
             <span class="fs-4">DLS-CSB</span>
+            <br>
         </a>
+        <p>Made with <a href="https://zoom.us/" class="text-primary" >Zoom</a>.</p>
     </header>
     <!-- End Header -->
     
@@ -159,7 +189,6 @@
       </div>
     <!-- End Cards -->
     </center>
-      
     <!-- Footer -->
     <footer class="ml-auto text-white-50">
       <a class="btn btn-light" href="https://support.zoom.us/hc/en-us/sections/201728913-Joining-Starting">Getting Started</a>
